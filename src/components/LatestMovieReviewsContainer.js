@@ -21,7 +21,7 @@ export class LatestMovieReviewsContainer extends Component {
     }
 
     render() {
-       const moviesArray = this.state.reviews.map(r => <MovieReviews review={r.byline, r.display_title, r.summary_short}/>)
+       const moviesArray = this.state.reviews.map(r => <MovieReviews review={r}/>)
         return (
             <div className="latest-movie-reviews">
                 {moviesArray}
